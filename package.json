@@ -4,6 +4,8 @@
   "description": "Typescript Node.js API",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/enyasantos/node-typescript-api/issues"
   },
-  "homepage": "https://github.com/enyasantos/node-typescript-api#readme"
+  "homepage": "https://github.com/enyasantos/node-typescript-api#readme",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.14.28",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
 }
