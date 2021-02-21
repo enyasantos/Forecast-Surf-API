@@ -11,7 +11,8 @@
     "style:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
     "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'",
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
-    "test:functional": "jest --projects ./test --runInBand"
+    "test:functional": "jest --projects ./test --runInBand",
+    "test:unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,7 @@
   },
   "dependencies": {
     "@overnightjs/core": "^1.7.5",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "module-alias": "^2.2.2"
